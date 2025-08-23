@@ -1,0 +1,263 @@
+{
+  "courses": [
+    {
+      "id": "mat-basica",
+      "level": "primaria",
+      "title": "Matemáticas Básicas",
+      "desc": "Sumas, restas, multiplicación y división con ejemplos visuales.",
+      "tags": [
+        "Números",
+        "Operaciones",
+        "Juegos"
+      ],
+      "lessons": [
+        {
+          "id": "sumas",
+          "title": "Sumar es juntar",
+          "preview": "Aprende a sumar con objetos: 3 + 2 = 5.",
+          "path": "./content/lessons/primaria/sumas.md",
+          "quiz": {
+            "q": "¿Cuánto es 4 + 3?",
+            "options": [
+              "6",
+              "7",
+              "8"
+            ],
+            "answer": 1
+          }
+        },
+        {
+          "id": "restas",
+          "title": "Restar es quitar",
+          "preview": "Si tienes 6 dulces y te comes 2, quedan 4.",
+          "path": "./content/lessons/primaria/restas.md",
+          "quiz": {
+            "q": "Si tienes 9 galletas y regalas 5, ¿cuántas quedan?",
+            "options": [
+              "3",
+              "4",
+              "5"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "lectura",
+      "level": "primaria",
+      "title": "Lectura Comprensiva",
+      "desc": "Cuentos cortos y preguntas de comprensión lectora.",
+      "tags": [
+        "Lenguaje",
+        "Cuentos"
+      ],
+      "lessons": [
+        {
+          "id": "gato-explorador",
+          "title": "El gato explorador",
+          "preview": "Un gato persigue una mariposa hasta una flor roja.",
+          "path": "./content/lessons/primaria/gato-explorador.md",
+          "quiz": {
+            "q": "¿De qué color era la flor?",
+            "options": [
+              "Azul",
+              "Roja",
+              "Amarilla"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciencias-naturales",
+      "level": "primaria",
+      "title": "Ciencias Naturales — Ciclo del Agua",
+      "desc": "Evaporación, condensación y precipitación con ejemplos.",
+      "tags": [
+        "Agua",
+        "Naturaleza"
+      ],
+      "lessons": [
+        {
+          "id": "ciclo-agua",
+          "title": "El ciclo del agua",
+          "preview": "Del mar a las nubes y luego a la tierra.",
+          "path": "./content/lessons/primaria/ciclo-agua.md",
+          "quiz": {
+            "q": "¿Cómo se llama cuando el agua sube como vapor?",
+            "options": [
+              "Precipitación",
+              "Condensación",
+              "Evaporación"
+            ],
+            "answer": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "algebra1",
+      "level": "secundaria",
+      "title": "Álgebra I",
+      "desc": "Expresiones, ecuaciones lineales y propiedades.",
+      "tags": [
+        "Ecuaciones",
+        "Variables"
+      ],
+      "lessons": [
+        {
+          "id": "ecu-lineales",
+          "title": "Ecuaciones lineales",
+          "preview": "ax + b = c; x = (c − b)/a.",
+          "path": "./content/lessons/secundaria/ecu-lineales.md",
+          "quiz": {
+            "q": "Resuelve 3x − 6 = 9",
+            "options": [
+              "x = 3",
+              "x = 5",
+              "x = 0"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "fisica-cinematica",
+      "level": "secundaria",
+      "title": "Física — Cinemática",
+      "desc": "MRU, velocidad, tiempo, distancia y ejercicios.",
+      "tags": [
+        "Movimiento",
+        "Velocidad"
+      ],
+      "lessons": [
+        {
+          "id": "mru",
+          "title": "Movimiento rectilíneo uniforme",
+          "preview": "v = d / t. Si d=150m y t=30s, v=5 m/s.",
+          "path": "./content/lessons/secundaria/mru.md",
+          "quiz": {
+            "q": "Si v=10 m/s y t=8 s, ¿d?",
+            "options": [
+              "18 m",
+              "80 m",
+              "800 m"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "python-intro",
+      "level": "secundaria",
+      "title": "Programación con Python (Intro)",
+      "desc": "Variables, entrada/salida y condicionales básicas.",
+      "tags": [
+        "Código",
+        "Algoritmos"
+      ],
+      "lessons": [
+        {
+          "id": "hola-python",
+          "title": "Tu primer script",
+          "preview": "print('Hola, mundo') y operaciones simples.",
+          "path": "./content/lessons/secundaria/hola-python.md",
+          "quiz": {
+            "q": "¿Qué imprime print(3*'Hi')?",
+            "options": [
+              "HiHiHi",
+              "Hi*3",
+              "Error"
+            ],
+            "answer": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "calculo1",
+      "level": "universidad",
+      "title": "Cálculo I",
+      "desc": "Límites, derivadas y aplicaciones básicas.",
+      "tags": [
+        "Derivadas",
+        "Límites"
+      ],
+      "lessons": [
+        {
+          "id": "derivadas",
+          "title": "Derivada de potencias",
+          "preview": "d/dx x^n = n·x^{n−1}.",
+          "path": "./content/lessons/universidad/derivadas.md",
+          "quiz": {
+            "q": "d/dx (x^4) = ?",
+            "options": [
+              "4x^3",
+              "3x^4",
+              "x^4/4"
+            ],
+            "answer": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "estructuras-datos",
+      "level": "universidad",
+      "title": "Estructuras de Datos",
+      "desc": "Listas, pilas, colas, árboles y complejidad.",
+      "tags": [
+        "Algoritmos",
+        "Big-O"
+      ],
+      "lessons": [
+        {
+          "id": "listas-pilas",
+          "title": "Listas y Pilas",
+          "preview": "Listas indexadas y pilas LIFO.",
+          "path": "./content/lessons/universidad/listas-pilas.md",
+          "quiz": {
+            "q": "Una pila usa el principio...",
+            "options": [
+              "FIFO",
+              "LIFO",
+              "DIFO"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciberseguridad",
+      "level": "universidad",
+      "title": "Ciberseguridad — Fundamentos",
+      "desc": "Triada CIA, MFA, backups y parches.",
+      "tags": [
+        "Red Team",
+        "Blue Team"
+      ],
+      "lessons": [
+        {
+          "id": "cia-triad",
+          "title": "Triada CIA",
+          "preview": "Confidencialidad, Integridad, Disponibilidad.",
+          "path": "./content/lessons/universidad/cia-triad.md",
+          "quiz": {
+            "q": "¿Qué protege MFA principalmente?",
+            "options": [
+              "Integridad",
+              "Confidencialidad",
+              "Disponibilidad"
+            ],
+            "answer": 1
+          }
+        }
+      ]
+    }
+  ]
+}

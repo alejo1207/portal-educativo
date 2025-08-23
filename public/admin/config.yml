@@ -1,0 +1,71 @@
+backend:
+  name: github
+  repo: alejo1207/portal-educativo   # ← usa tu repo real
+  branch: main
+  # Para GH Pages, añade un proxy OAuth y descomenta estas líneas:
+  # base_url: https://TU-DOMINIO-OAUTH
+  # auth_endpoint: /api/auth
+
+media_folder: "public/uploads"
+public_folder: "/portal-educativo/uploads"
+
+locale: "es"
+
+collections:
+  - name: "indice"
+    label: "Índice de cursos"
+    files:
+      - name: "cursos"
+        label: "Cursos (index.json)"
+        file: "content/index.json"
+        format: "json"
+        fields:
+          - label: "Cursos"
+            name: "courses"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Nivel", name: "level", widget: "select", options: ["primaria","secundaria","universidad"]}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descripción", name: "desc", widget: "text", required: false}
+              - {label: "Etiquetas", name: "tags", widget: "list", required: false}
+              - label: "Lecciones"
+                name: "lessons"
+                widget: "list"
+                fields:
+                  - {label: "ID", name: "id", widget: "string"}
+                  - {label: "Título", name: "title", widget: "string"}
+                  - {label: "Resumen", name: "preview", widget: "string", required: false}
+                  - {label: "Ruta del Markdown", name: "path", widget: "string"}
+                  - label: "Quiz (opcional)"
+                    name: "quiz"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: "Pregunta", name: "q", widget: "string"}
+                      - {label: "Opciones", name: "options", widget: "list"}
+                      - {label: "Respuesta (índice 0..n)", name: "answer", widget: "number"}
+  - name: "lecciones_primaria"
+    label: "Lecciones — Primaria"
+    folder: "content/lessons/primaria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
+  - name: "lecciones_secundaria"
+    label: "Lecciones — Secundaria"
+    folder: "content/lessons/secundaria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
+  - name: "lecciones_universidad"
+    label: "Lecciones — Universidad"
+    folder: "content/lessons/universidad"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Cuerpo", name: "body", widget: "markdown"}
